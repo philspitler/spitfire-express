@@ -29,7 +29,7 @@ var api = function (database) {
 
   // POST document.
   router.post('/:resource', function (req, res) {
-    spitfire.createResource(req.params.resource, function (doc) {
+    spitfire.createResource(req.params.resource, req.body, function (doc) {
       res.json(doc);
     });
   });
