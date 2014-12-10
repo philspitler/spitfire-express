@@ -1,6 +1,6 @@
 {
   "name": "spitfire-express",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Express middleware for spitfire.",
   "main": "index.js",
   "scripts": {
