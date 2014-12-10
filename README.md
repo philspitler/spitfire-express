@@ -2,6 +2,11 @@
 
 ##Express Middleware for generating and using dynamic RESTful resources.
 
+###Requirements:
+
+- Node.js
+- Express.js
+
 ###Features:
 create, read, update and delete for resources
 
