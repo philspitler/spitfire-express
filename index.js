@@ -8,7 +8,6 @@ var api = function (config) {
   var spitfire = new Spitfire(config.database);
   // GET listing.
   router.get('/:resource', function (req, res) {
-    console.log(req.params.resource);
     spitfire.getResources(req.params.resource, function (docs) {
       res.json(docs);
     });
