@@ -7,7 +7,7 @@ create, read, update and delete for resources
 
 create and read for single level nested resources
 
-###General Usage
+###General Usage:
 Mount it to a route and give it a database name or connection string.
 
 ```javascript
