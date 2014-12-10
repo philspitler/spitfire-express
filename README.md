@@ -7,9 +7,6 @@ create, read, update and delete for resources
 
 create and read for single level nested resources
 
-###Notes:
-While single level nesting of resources is limiting, with multiple calls, one should be able to get any related information needed.  If it turns out to be too limiting or intensive, adjustments can be made at that time.
-
 ###General Usage
 Mount it to a route and give it a database name or connection string.
 
@@ -56,5 +53,5 @@ Here is an example of using spitfire-express for forums and topics.
 
 We've used "forums" and "topics" as a resource names in the above example, but they could literally be anything.
 
-###More Documentation
-More documentation to come.
+###Notes:
+While single level nesting of resources is limiting, with multiple calls, one should be able to get any related information needed.  If it turns out to be too limiting or intensive, adjustments can be made at that time.
