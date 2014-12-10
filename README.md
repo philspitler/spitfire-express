@@ -2,6 +2,14 @@
 
 ##Express Middleware for generating and using dynamic RESTful resources.
 
+###Features:
+create, read, update and delete for resources
+
+create and read for single level nested resources
+
+###Notes:
+While single level nesting of resources is limiting, with multiple calls, one should be able to get any related information needed.  If it turns out to be too limiting or intensive, adjustments can be made at that time.
+
 ###General Usage
 Mount it to a route and give it a database name or connection string.
 
@@ -10,9 +18,43 @@ var api = require('spitfire-express')('mydb'); //whatever db name you’d like
 
 app.use('/api', api);
 ```
-As an example, now you can call /api/forums with POST and create a new resource.  You will be returned the created resource complete with ID from the database.
+Here is an example of using spitfire-express for forums and topics.
 
-Call it with a GET like /api/forums/[id-returned-from-post] and you'll get back your resource.
+```javascript
+//GET http://localhost:4444/forums
+[]
+
+//POST http://localhost:4444/forums
+//body: {name: 'New Forum'}
+{
+    "name": "New Forum",
+    "_id": "5488ac09d770170000fc7713"
+}
+//GET http://localhost:4444/forums/5488ac09d770170000fc7713
+{
+    "_id": "5488ac09d770170000fc7713",
+    "name": "New Forum"
+}
+
+//POST http://localhost:4444/forums/5488ac09d770170000fc7713/topics
+//body: {name: 'New Topic'}
+{
+    "name": "New Topic",
+    "forum_id": "5488ac09d770170000fc7713",
+    "_id": "5488ac97d770170000fc7714"
+}
+
+//GET http://localhost:4444/forums/5488ac09d770170000fc7713/topics
+[
+    {
+        "_id": "5488ac97d770170000fc7714",
+        "name": "New Topic",
+        "forum_id": "5488ac09d770170000fc7713"
+    }
+]
+```
+
+We've used "forums" and "topics" as a resource names in the above example, but they could literally be anything.
 
 ###More Documentation
 More documentation to come.
