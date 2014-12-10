@@ -21,22 +21,22 @@ app.use('/api', api);
 Here is an example of using spitfire-express for forums and topics.
 
 ```javascript
-//GET http://localhost:4444/forums
+//GET http://localhost:4444/api/forums
 []
 
-//POST http://localhost:4444/forums
+//POST http://localhost:4444/api/forums
 //body: {name: 'New Forum'}
 {
     "name": "New Forum",
     "_id": "5488ac09d770170000fc7713"
 }
-//GET http://localhost:4444/forums/5488ac09d770170000fc7713
+//GET http://localhost:4444/api/forums/5488ac09d770170000fc7713
 {
     "_id": "5488ac09d770170000fc7713",
     "name": "New Forum"
 }
 
-//POST http://localhost:4444/forums/5488ac09d770170000fc7713/topics
+//POST http://localhost:4444/api/forums/5488ac09d770170000fc7713/topics
 //body: {name: 'New Topic'}
 {
     "name": "New Topic",
@@ -44,7 +44,7 @@ Here is an example of using spitfire-express for forums and topics.
     "_id": "5488ac97d770170000fc7714"
 }
 
-//GET http://localhost:4444/forums/5488ac09d770170000fc7713/topics
+//GET http://localhost:4444/api/forums/5488ac09d770170000fc7713/topics
 [
     {
         "_id": "5488ac97d770170000fc7714",
