@@ -5,7 +5,7 @@ var router = express.Router();
 var Spitfire = require('spitfire');
 
 var api = function (database, environment) {
-  var generateResources = environment === 'production' ? true : undefined;
+  var generateResources = environment !== 'production' ? true : undefined;
   var spitfire = new Spitfire(database, generateResources);
   // GET listing.
   router.get('/:resource', function (req, res) {
