@@ -18,6 +18,6 @@
   "homepage": "https://github.com/spitfireio/spitfire-express",
   "dependencies": {
     "express": "~4.2.0",
-    "spitfire": "spitfireio/spitfire"
+    "spitfire-node": "^1.0.0"
   }
 }
