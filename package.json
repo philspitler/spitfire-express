@@ -1,7 +1,7 @@
 {
   "name": "spitfire-express",
   "version": "1.0.0",
-  "description": "Express middleware for spitfire.",
+  "description": "Express middleware for spitfire (configureless Backend as a Service).",
   "main": "./lib/spitfire-express.js",
   "scripts": {
     "test": "mocha spec"
