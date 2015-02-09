@@ -18,6 +18,9 @@ Mount it to a route and give it a database name or connection string.
 ```javascript
 var api = require('spitfire-express')('mydb'); //whatever db name you’d like
 
+// If an optional environment of 'production' is passed, endpoints won’t be created, only the data will be added if those endpoints already exist.  This would look like:
+var api = require('spitfire-express')('mydb', 'production');
+
 app.use('/api', api);
 ```
 Here is an example of using spitfire-express for forums and topics.
