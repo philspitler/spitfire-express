@@ -2,9 +2,9 @@
   "name": "spitfire-express",
   "version": "1.0.0",
   "description": "Express middleware for spitfire.",
-  "main": "index.js",
+  "main": "./lib/spitfire-express.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha spec"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,13 @@
   "dependencies": {
     "express": "~4.2.0",
     "spitfire-node": "^1.0.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.11.0",
+    "chai": "^1.10.0",
+    "express": "^4.2.0",
+    "mocha": "^2.1.0",
+    "mongojs": "^0.18.1",
+    "supertest": "^0.15.0"
   }
 }
