@@ -8,7 +8,10 @@
 - Express.js
 
 ###Installation
-npm install spitfire-express
+
+```bash
+$ npm install spitfire-express
+```
 
 ###Features:
 create, read, update and delete for resources
