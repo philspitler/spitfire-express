@@ -7,6 +7,9 @@
 - Node.js
 - Express.js
 
+###Installation
+npm install spitfire-express
+
 ###Features:
 create, read, update and delete for resources
 
