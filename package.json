@@ -1,6 +1,6 @@
 {
   "name": "spitfire-express",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Express middleware for spitfire (configureless Backend as a Service).",
   "main": "./lib/spitfire-express.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/spitfireio/spitfire-express",
   "dependencies": {
     "express": "~4.2.0",
-    "spitfire-node": "^1.0.0"
+    "spitfire-node": "^1.0.2"
   },
   "devDependencies": {
     "body-parser": "^1.11.0",
