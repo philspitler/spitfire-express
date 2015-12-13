@@ -1,25 +1,26 @@
-#Spitfire-Express
+# Spitfire-Express
+
 [![npm version](https://badge.fury.io/js/spitfire-express.svg)](https://badge.fury.io/js/spitfire-express)
 
-##Express Middleware for generating and using dynamic RESTful resources.
+## Express Middleware for generating and using dynamic RESTful resources.
 
-###Requirements:
+### Requirements:
 
 - Node.js
 - Express.js
 
-###Installation
+### Installation
 
 ```bash
 $ npm install spitfire-express
 ```
 
-###Features:
+### Features:
 create, read, update and delete for resources
 
 create and read for single level nested resources
 
-###General Usage:
+### General Usage:
 Mount it to a route and give it a database name or connection string.
 
 ```javascript
@@ -70,5 +71,5 @@ Here is an example of using spitfire-express for forums and topics.
 
 We've used "forums" and "topics" as a resource names in the above example, but they could literally be anything.
 
-###Notes:
+### Notes:
 While single level nesting of resources is limiting, with multiple calls, one should be able to get any related information needed.  If it turns out to be too limiting or intensive, adjustments can be made at that time.
