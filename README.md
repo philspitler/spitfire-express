@@ -1,4 +1,5 @@
 #Spitfire-Express
+[![npm version](https://badge.fury.io/js/spitfire-express.svg)](https://badge.fury.io/js/spitfire-express)
 
 ##Express Middleware for generating and using dynamic RESTful resources.
 
