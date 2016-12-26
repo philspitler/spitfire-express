@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/spitfireio/spitfire-express.git"
+    "url": "https://github.com/philspitler/spitfire-express.git"
   },
   "author": "Phil Spitler <phil@spitfire.io>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/spitfireio/spitfire-express/issues"
+    "url": "https://github.com/philspitler/spitfire-express/issues"
   },
-  "homepage": "https://github.com/spitfireio/spitfire-express",
+  "homepage": "https://github.com/philspitler/spitfire-express",
   "dependencies": {
     "express": "~4.2.0",
     "spitfire-node": "^1.0.2"
