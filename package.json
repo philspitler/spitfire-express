@@ -17,15 +17,14 @@
   },
   "homepage": "https://github.com/philspitler/spitfire-express",
   "dependencies": {
-    "express": "~4.2.0",
     "spitfire-mongo": "^1.0.7"
   },
   "devDependencies": {
     "body-parser": "^1.11.0",
     "chai": "^1.10.0",
-    "express": "^4.2.0",
-    "mocha": "^2.1.0",
+    "express": "^4.17.1",
+    "mocha": "^6.2.0",
     "mongojs": "^2.4.0",
-    "supertest": "^0.15.0"
+    "supertest": "^4.0.2"
   }
 }
